@@ -1,0 +1,175 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+.hero{
+min-height:100vh;
+padding:40px 20px;
+background:
+linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.9)),
+url('4x2.jpeg') center/cover no-repeat;
+}
+
+.logo{
+width:240px;
+display:block;
+margin:auto;
+}
+
+.hero-content{
+max-width:1200px;
+margin:90px auto 0;
+}
+
+.hero h1{
+font-size:90px;
+line-height:.9;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#f0b400;
+}
+
+.hero p{
+font-size:22px;
+color:#ccc;
+margin-bottom:50px;
+max-width:600px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:35px;
+border-radius:20px;
+text-decoration:none;
+color:white;
+border:1px solid #222;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#f0b400;
+}
+
+.card h2{
+margin-bottom:10px;
+}
+
+.card span{
+color:#aaa;
+}
+
+section{
+max-width:1300px;
+margin:auto;
+padding:90px 20px;
+}
+
+section h2{
+text-align:center;
+font-size:48px;
+margin-bottom:15px;
+}
+
+.subtitle{
+text-align:center;
+color:#aaa;
+margin-bottom:50px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#111;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #1d1d1d;
+}
+
+.project-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.project-info{
+padding:25px;
+}
+
+.project-info h3{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.project-info p{
+color:#aaa;
+}
+
+.locacao-box{
+background:#111;
+padding:60px;
+border-radius:25px;
+text-align:center;
+}
+
+.locacao-box p{
+font-size:22px;
+color:#bbb;
+margin-bottom:30px;
+}
+
+.locacao-box a{
+background:#f0b400;
+padding:16px 28px;
+border-radius:12px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+display:inline-block;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#777;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:52px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section h2{
+font-size:34px;
+}
+
+.locacao-box{
+padding:35px 20px;
+}
+
+}
